@@ -56,7 +56,6 @@ class OnlineSalesRegisterCollector:
             if self.__tax_rate[item] == 10:
                 ten_percent_tax.append(item)
                 total.append(self.__item_price[item])
-        print(f'len_total = {len(self.__name_items)}')
         if len(self.__name_items) > 10:
             return sum(total) * 0.9 * 0.1
         return sum(total) * 0.1
